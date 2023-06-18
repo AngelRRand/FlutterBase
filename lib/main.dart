@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
             seedColor: const Color.fromARGB(255, 239, 239, 239)),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Ta piola'),
+      home: const MyHomePage(title: 'Ta muy piola'),
     );
   }
 }
