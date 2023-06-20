@@ -72,16 +72,26 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.network(
-                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
-            const Text(
-              'Im a count :3',
-            ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
+              textScaleFactor: 2,
             ),
-            const Row(children: <Widget>[]),
+            Image.network(
+                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+            const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Text(
+                    'hola',
+                  ),
+                  Text(
+                    'hola',
+                  ),
+                  Text(
+                    'hola',
+                  ),
+                ]),
             ElevatedButton(
                 onPressed: _decrementCounter,
                 child: const Text('go testt increment')),
